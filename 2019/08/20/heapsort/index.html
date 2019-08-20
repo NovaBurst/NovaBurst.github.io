@@ -57,21 +57,21 @@
   };
 </script>
 
-  <meta name="description" content="简介堆排序是一种就地排序的序算法，其时间复杂度为$O(n,\lg n)$。 算法描述堆二叉堆可以视为一棵完全二叉树，用数组存储。除最后一层外，每一层都是满的。下图是一个大根堆1，任一结点的值不大于父节点，根结点存堆的最大元素，设根元素储存在A[1]里2，则某个结点A[i]的父节点为A[$\lfloor i/2 \rfloor$]，左子结点为A[2i]，右子结点为A[2i+1]。注意到堆的大小有可能">
+  <meta name="description" content="简介堆排序是一种就地排序的序算法，其时间复杂度为$O(n\lg n)$。 算法描述堆二叉堆可以视为一棵完全二叉树，用数组存储。除最后一层外，每一层都是满的。下图是一个大根堆1，任一结点的值不大于父节点，根结点存堆的最大元素，设根元素储存在A[1]里2，则某个结点A[i]的父节点为A[$\lfloor i/2 \rfloor$]，左子结点为A[2i]，右子结点为A[2i+1]。注意到堆的大小有可能小">
 <meta name="keywords" content="算法 排序 快排 堆排序 Heapsort Sorting Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nova Blog">
 <meta property="og:url" content="http://NovaBurst.github.io/2019/08/20/heapsort/index.html">
 <meta property="og:site_name" content="Nova Blog">
-<meta property="og:description" content="简介堆排序是一种就地排序的序算法，其时间复杂度为$O(n,\lg n)$。 算法描述堆二叉堆可以视为一棵完全二叉树，用数组存储。除最后一层外，每一层都是满的。下图是一个大根堆1，任一结点的值不大于父节点，根结点存堆的最大元素，设根元素储存在A[1]里2，则某个结点A[i]的父节点为A[$\lfloor i/2 \rfloor$]，左子结点为A[2i]，右子结点为A[2i+1]。注意到堆的大小有可能">
+<meta property="og:description" content="简介堆排序是一种就地排序的序算法，其时间复杂度为$O(n\lg n)$。 算法描述堆二叉堆可以视为一棵完全二叉树，用数组存储。除最后一层外，每一层都是满的。下图是一个大根堆1，任一结点的值不大于父节点，根结点存堆的最大元素，设根元素储存在A[1]里2，则某个结点A[i]的父节点为A[$\lfloor i/2 \rfloor$]，左子结点为A[2i]，右子结点为A[2i+1]。注意到堆的大小有可能小">
 <meta property="og:locale" content="zh">
 <meta property="og:image" content="https://i.loli.net/2019/08/18/MVCjTQ8ktbxGSe5.png">
 <meta property="og:image" content="https://i.loli.net/2019/08/18/gt2DO1LjPJSVrYT.png">
 <meta property="og:image" content="https://i.loli.net/2019/08/18/h3KdzBu5YyaRmsL.png">
-<meta property="og:updated_time" content="2019-08-20T02:44:49.000Z">
+<meta property="og:updated_time" content="2019-08-20T02:58:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nova Blog">
-<meta name="twitter:description" content="简介堆排序是一种就地排序的序算法，其时间复杂度为$O(n,\lg n)$。 算法描述堆二叉堆可以视为一棵完全二叉树，用数组存储。除最后一层外，每一层都是满的。下图是一个大根堆1，任一结点的值不大于父节点，根结点存堆的最大元素，设根元素储存在A[1]里2，则某个结点A[i]的父节点为A[$\lfloor i/2 \rfloor$]，左子结点为A[2i]，右子结点为A[2i+1]。注意到堆的大小有可能">
+<meta name="twitter:description" content="简介堆排序是一种就地排序的序算法，其时间复杂度为$O(n\lg n)$。 算法描述堆二叉堆可以视为一棵完全二叉树，用数组存储。除最后一层外，每一层都是满的。下图是一个大根堆1，任一结点的值不大于父节点，根结点存堆的最大元素，设根元素储存在A[1]里2，则某个结点A[i]的父节点为A[$\lfloor i/2 \rfloor$]，左子结点为A[2i]，右子结点为A[2i+1]。注意到堆的大小有可能小">
 <meta name="twitter:image" content="https://i.loli.net/2019/08/18/MVCjTQ8ktbxGSe5.png">
   <link rel="canonical" href="http://NovaBurst.github.io/2019/08/20/heapsort/">
 
@@ -231,7 +231,7 @@
                 
               
 
-              <time title="Created: 2019-08-20 08:30:05 / Modified: 10:44:49" itemprop="dateCreated datePublished" datetime="2019-08-20T08:30:05+08:00">2019-08-20</time>
+              <time title="Created: 2019-08-20 08:30:05 / Modified: 10:58:15" itemprop="dateCreated datePublished" datetime="2019-08-20T08:30:05+08:00">2019-08-20</time>
             </span>
           
             
@@ -250,7 +250,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>堆排序是一种就地排序的序算法，其时间复杂度为$O(n,\lg n)$。</p>
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>堆排序是一种就地排序的序算法，其时间复杂度为$O(n\lg n)$。</p>
 <h2 id="算法描述"><a href="#算法描述" class="headerlink" title="算法描述"></a>算法描述</h2><h3 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h3><p>二叉堆可以视为一棵完全二叉树，用数组存储。除最后一层外，每一层都是满的。下图是一个大根堆<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，任一结点的值不大于父节点，根结点存堆的最大元素，设根元素储存在A[1]里<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>，则某个结点A[i]的父节点为A[$\lfloor i/2 \rfloor$]，左子结点为A[2i]，右子结点为A[2i+1]。<br><img src="https://i.loli.net/2019/08/18/MVCjTQ8ktbxGSe5.png" alt="image.png"><br>注意到堆的大小有可能小于数组的长度（上图未列出），即A[1..heapsize]内存储堆中的元素，A[heapsize+1..length]存储的元素不在堆中。在后续堆排序过程中，在数组中而不在堆中的元素为已经排序完毕元素。在下文的C++实现中，将heapsize存到A[0]的位置。</p>
 <h3 id="SIFT"><a href="#SIFT" class="headerlink" title="SIFT"></a>SIFT</h3><p>假设对于结点i，以其左右子结点为根的子树都满足最大堆性质，但A[i]本身有可能小于其子结点，违反性质，此时需要运行<code>SIFT</code>函数，使以i为根的子树满足最大堆性质。<br>C++代码如下：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">sift</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums,<span class="keyword">unsigned</span> <span class="keyword">int</span> i)</span></span>&#123;</span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> l = i*<span class="number">2</span>;</span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> r = i*<span class="number">2</span>+<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> largest = i;</span><br><span class="line">	<span class="comment">//suppose that elements are stored in nums[1..heap_size]</span></span><br><span class="line">	<span class="comment">//nums[0] is heap_size</span></span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> heap_size = nums[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">if</span> (l &lt;= heap_size &amp;&amp; nums[l]&gt; nums[largest])</span><br><span class="line">		largest = l;</span><br><span class="line">	<span class="keyword">if</span> (r &lt;= heap_size &amp;&amp; nums[r]&gt; nums[largest])</span><br><span class="line">		largest = r;</span><br><span class="line">	<span class="keyword">if</span> (largest!=i)&#123;</span><br><span class="line">		swap(nums[i],nums[largest]);</span><br><span class="line">		sift(nums,largest);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -264,12 +264,12 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">heapsort</span><span class="params">(<span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; &amp;nums)</span></span>&#123;</span><br><span class="line">	build_heap(nums);</span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> i = nums.size();</span><br><span class="line">	<span class="keyword">while</span> (i&gt;<span class="number">1</span>)&#123;</span><br><span class="line">		swap(nums[<span class="number">1</span>],nums[--i]);</span><br><span class="line">		--nums[<span class="number">0</span>]; <span class="comment">//decrease heap size</span></span><br><span class="line">		sift(nums,<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>其执行过程如下图所示，其中深色代表已经从堆中去掉的元素，浅色元素为留在堆中的元素。<br><img src="https://i.loli.net/2019/08/18/h3KdzBu5YyaRmsL.png" alt="image.png"></p>
-<h3 id="复杂度"><a href="#复杂度" class="headerlink" title="复杂度"></a>复杂度</h3><p>平均、最好和最坏情况下的时间复杂度均为$O(n,\lg n)$</p>
+<h3 id="复杂度"><a href="#复杂度" class="headerlink" title="复杂度"></a>复杂度</h3><p>平均、最好和最坏情况下的时间复杂度均为$O(n\lg n)$</p>
 <h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><ul>
 <li>堆结构可用于维护优先级队列，能以$O(\lg n)$的复杂度插入元素、返回并删除最大值元素、增加元素的值。</li>
-<li>由于最坏情况复杂度为$O(n,\lg n)$，堆排序被使用在考虑实时性和安全性的系统中，如Linux内核。</li>
+<li>由于最坏情况复杂度为$O(n\lg n)$，堆排序被使用在考虑实时性和安全性的系统中，如Linux内核。</li>
 </ul>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">示意图、代码参考《算法导论》第6章</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;">若数组下标从0开始（即根元素存在A[0]里），则父节点为(i-1)/2，左子结点为2i+1，右子结点为2i+2。</span><a href="#fnref:2" rev="footnote"> ↩</a></li></ol></div></div>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">示意图、代码参考《算法导论》第6章</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;">若数组下标从0开始（即根元素存在A[0]里），则父节点为(i-1)/2，左子结点为2i+1，右子结点为2i+2。</span><a href="#fnref:2" rev="footnote"> ↩</a></li></ol></div></div>
     </div>
 
     
@@ -379,7 +379,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法描述"><span class="nav-number">2.</span> <span class="nav-text">算法描述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#堆"><span class="nav-number">2.1.</span> <span class="nav-text">堆</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SIFT"><span class="nav-number">2.2.</span> <span class="nav-text">SIFT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建堆"><span class="nav-number">2.3.</span> <span class="nav-text">建堆</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#堆排序"><span class="nav-number">2.4.</span> <span class="nav-text">堆排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复杂度"><span class="nav-number">2.5.</span> <span class="nav-text">复杂度</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用"><span class="nav-number">3.</span> <span class="nav-text">应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法描述"><span class="nav-number">2.</span> <span class="nav-text">算法描述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#堆"><span class="nav-number">2.1.</span> <span class="nav-text">堆</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SIFT"><span class="nav-number">2.2.</span> <span class="nav-text">SIFT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建堆"><span class="nav-number">2.3.</span> <span class="nav-text">建堆</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#堆排序"><span class="nav-number">2.4.</span> <span class="nav-text">堆排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复杂度"><span class="nav-number">2.5.</span> <span class="nav-text">复杂度</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用"><span class="nav-number">3.</span> <span class="nav-text">应用</span></a></li></ol></div>
             
 
           </div>
